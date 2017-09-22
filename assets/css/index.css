@@ -42,7 +42,7 @@ html, body {
     color: #333;
     position: absolute;
     width: 100%;
-    top: 80%;
+    bottom: 10%;
 }
 
 @-webkit-keyframes ball-scale {
