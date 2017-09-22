@@ -11,9 +11,9 @@ $(function() {
     initPic();
     var swiper = new Swiper('.swiper-container', {
         // Disable preloading of all images
-        preloadImages: false,
+        // preloadImages: false,
         // Enable lazy loading
-        lazyLoading: true,
+        // lazyLoading: true,
         loop: true
     });
 });
