@@ -1,5 +1,6 @@
 $(function() {
     function initPic() {
+        var dateTime = new Date().getTime();
         var qiniuBaseUrl = "http://owntjivne.bkt.clouddn.com/";
         var $swiperWrap = $(".swiper-wrapper");
         var dateDescArray = [
@@ -16,7 +17,7 @@ $(function() {
         for (var i = 0, len = dateDescArray.length; i < len; i++) {
             var dateDesc = dateDescArray[i];
             var date = dateDesc.date;
-            $swiperWrap.append('<div class="swiper-slide"><img src="' + qiniuBaseUrl + date + '.jpg" width="95%" class="swiper-lazy"><p class="swiper-desc">' + date + '</p></div>')
+            $swiperWrap.append('<div class="swiper-slide"><img src="' + qiniuBaseUrl + date + '.jpg?t='+dateTime+'" width="95%" class="swiper-lazy"><p class="swiper-desc">' + date + '</p></div>')
         }
     }
     initPic();
