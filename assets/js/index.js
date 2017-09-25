@@ -16,13 +16,13 @@ $(function() {
         for (var i = 0, len = dateDescArray.length; i < len; i++) {
             var dateDesc = dateDescArray[i];
             var date = dateDesc.date;
-            $swiperWrap.append('<div class="swiper-slide"><img data-src="' + qiniuBaseUrl + date + '.jpg" width="100%" class="swiper-lazy"><p class="swiper-desc">' + date + '</p></div>')
+            $swiperWrap.append('<div class="swiper-slide"><img src="' + qiniuBaseUrl + date + '.jpg" width="95%" class="swiper-lazy"><p class="swiper-desc">' + date + '</p></div>')
         }
     }
     initPic();
     var swiper = new Swiper('.swiper-container', {
         // Enable lazy loading
-        lazyLoading: true,
+        // lazyLoading: true,
         loop: true
     });
 });
