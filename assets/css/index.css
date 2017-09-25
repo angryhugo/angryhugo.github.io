@@ -20,7 +20,16 @@ html, body {
   top: 50%;
 }
 
-.swiper-slide:after {
+.swiper-desc {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+}
+
+/*.swiper-slide:after {
     content: "";
     display: block;
     width: 50px;
@@ -34,16 +43,7 @@ html, body {
     top: 50%;
     margin: -25px 0 0 -25px;
     z-index: -1;
-}
-
-.swiper-desc {
-    text-align: center;
-    font-size: 24px;
-    color: #333;
-    position: absolute;
-    width: 100%;
-    bottom: 10%;
-}
+}*/
 
 @-webkit-keyframes ball-scale {
     0% {
