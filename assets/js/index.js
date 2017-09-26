@@ -5,12 +5,12 @@ $(function() {
         var $swiperWrap = $(".swiper-wrapper");
         var dateDescArray = [{
                 'date': '2017-08-28',
-                'desc': '第一个七夕',
+                'desc': '七夕“再”一起',
                 'distance': '70'
             },
             {
                 'date': '2017-09-01',
-                'desc': '居然停在一起',
+                'desc': '蓦然回首你在身边',
                 'distance': '73'
             },
             {
@@ -25,7 +25,7 @@ $(function() {
             },
             {
                 'date': '2017-09-10',
-                'desc': '去了个"假的"植物园',
+                'desc': '去了个“假”植物园',
                 'distance': '108'
             },
             {
@@ -54,10 +54,10 @@ $(function() {
             var date = dateDesc.date;
             var desc = dateDesc.desc;
             var distance = dateDesc.distance;
-            $swiperWrap.append('<div class="swiper-slide">' + '<p class="desc">' + desc + '</p><p class="date">' + date + '</p><p class="distance">' + distance + 'km</p><img src="' + qiniuBaseUrl + date + '.jpg?t="'+dateTime+' width="95%" class="swiper-lazy"></div>')
+            $swiperWrap.append('<div class="swiper-slide">' + '<p class="desc">' + desc + '</p><p class="date">' + date + '</p><p class="distance">' + distance + 'km</p><img src="' + qiniuBaseUrl + date + '.jpg?t='+ dateTime +'" width="95%" class="swiper-lazy"></div>')
         }
     }
-    initPic();
+    // initPic();
     var width = $(window).width();
     $(".swiper-container").css("height", width * 0.95 + 80);
     var swiper = new Swiper('.swiper-container', {
