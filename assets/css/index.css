@@ -3,6 +3,22 @@ html, body {
     height: 100%;
 }
 
+.pu {
+    height: 40px;
+    margin: 5% 2.5% 2.5%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #cdced3;
+    line-height: 40px;
+    font-size: 30px;
+}
+
+.pu img {
+    border-radius: 50%;
+    float: right;
+    width: 36px;
+    height: 36px;
+}
+
 .swiper-container {
   width: 100%;
   height: auto;
@@ -22,7 +38,7 @@ html, body {
 }
 
 .swiper-slide p.distance {
-    margin-bottom: 4px;
+    margin-bottom: 9px;
     height: 20px;
     line-height: 20px;
     color: #017bff;

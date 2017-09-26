@@ -59,7 +59,7 @@ $(function() {
     }
     initPic();
     var width = $(window).width();
-    $(".swiper-container").css("height", width * 0.95 + 80);
+    $(".swiper-container").css("height", width * 0.95 + 85);
     var swiper = new Swiper('.swiper-container', {
         // Enable lazy loading
         // lazyLoading: true,
