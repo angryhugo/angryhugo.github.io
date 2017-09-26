@@ -57,7 +57,7 @@ $(function() {
             $swiperWrap.append('<div class="swiper-slide">' + '<p class="desc">' + desc + '</p><p class="date">' + date + '</p><p class="distance">' + distance + 'km</p><img src="' + qiniuBaseUrl + date + '.jpg?t='+ dateTime +'" width="95%" class="swiper-lazy"></div>')
         }
     }
-    // initPic();
+    initPic();
     var width = $(window).width();
     $(".swiper-container").css("height", width * 0.95 + 80);
     var swiper = new Swiper('.swiper-container', {
