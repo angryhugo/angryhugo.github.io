@@ -5,7 +5,7 @@ html, body {
 
 .swiper-container {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .swiper-slide img {
@@ -14,21 +14,35 @@ html, body {
   max-width: 95%;
   max-height: 95%;
   border-radius: 3%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  position: absolute;
-  left: 50%;
-  top: 50%;
+  margin-left: 2.5%;
 }
 
-.swiper-desc {
-    text-align: center;
-    font-size: 24px;
-    color: #333;
-    position: absolute;
-    width: 100%;
-    bottom: 10%;
+.swiper-slide p {
+    margin-left: 2.5%;
 }
+
+.swiper-slide p.distance {
+    margin-bottom: 4px;
+    height: 20px;
+    line-height: 20px;
+    color: #017bff;
+    font-size: 14px;
+}
+
+.swiper-slide p.desc {
+    height: 32px;
+    line-height: 32px;
+    color: #000;
+    font-size: 20px;
+}
+
+.swiper-slide p.date {
+    height: 24px;
+    line-height: 24px;
+    color: #8e8e93;
+    font-size: 16px;
+}
+
 
 /*动画会引起lazyloading bug*/
 .swiper-slide:after {
