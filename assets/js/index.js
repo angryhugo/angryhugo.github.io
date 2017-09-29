@@ -6,7 +6,7 @@ $(function() {
         var dateDescArray = [{
                 'date': '2017-08-28',
                 'desc': '七夕“再”一起',
-                'distance': '70'
+                'distance': '130'
             },
             {
                 'date': '2017-09-01',
@@ -45,8 +45,13 @@ $(function() {
             },
             {
                 'date': '2017-09-24',
-                'desc': '在地下车库抓狂 ',
+                'desc': '在地下车库抓狂',
                 'distance': '85'
+            },
+            {
+                'date': '2017-09-28',
+                'desc': '渐渐离不开你<small>1month</small>',
+                'distance': '130'
             }
         ];
         for (var i = 0, len = dateDescArray.length; i < len; i++) {
