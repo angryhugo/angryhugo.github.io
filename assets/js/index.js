@@ -1,6 +1,9 @@
 $(function() {
-    function initPic() {
+    function init() {
         var dateTime = new Date().getTime();
+        var startDayTime = new Date("2017","7","28").getTime();
+        var days = parseInt((dateTime-startDayTime)/(24*60*60*1000));
+        $("#days").html(days+"days");
         var qiniuBaseUrl = "http://owntjivne.bkt.clouddn.com/";
         var $swiperWrap = $(".swiper-wrapper");
         var dateDescArray = [{
@@ -61,13 +64,13 @@ $(function() {
             var distance = dateDesc.distance;
             $swiperWrap.append('<div class="swiper-slide">' + '<p class="desc">' + desc + '</p><p class="date">' + date + '</p><p class="distance">' + distance + 'km</p><img src="' + qiniuBaseUrl + date + '.jpg?t='+ dateTime +'" width="95%" class="swiper-lazy"></div>')
         }
+        var width = $(window).width();
+        $(".swiper-container").css("height", width * 0.95 + 85);
+        var swiper = new Swiper('.swiper-container', {
+            // Enable lazy loading
+            // lazyLoading: true,
+            loop: true
+        });
     }
-    initPic();
-    var width = $(window).width();
-    $(".swiper-container").css("height", width * 0.95 + 85);
-    var swiper = new Swiper('.swiper-container', {
-        // Enable lazy loading
-        // lazyLoading: true,
-        loop: true
-    });
+    init();
 });

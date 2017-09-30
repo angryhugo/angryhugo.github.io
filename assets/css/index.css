@@ -19,6 +19,12 @@ html, body {
     height: 36px;
 }
 
+.pu small {
+    color: #e38;
+    font-size: 18px;
+    margin-left: 2%;
+}
+
 .swiper-container {
   width: 100%;
   height: auto;
