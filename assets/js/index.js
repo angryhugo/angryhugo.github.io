@@ -55,6 +55,21 @@ $(function() {
                 'date': '2017-09-28',
                 'desc': '渐渐离不开你<small>1month</small>',
                 'distance': '130'
+            },
+            {
+                'date': '2017-09-30',
+                'desc': '见你，无论风雨多大',
+                'distance': '65'
+            },
+            {
+                'date': '2017-10-03',
+                'desc': '给你做一辈子',
+                'distance': '65'
+            },
+            {
+                'date': '2017-10-04',
+                'desc': '有你才是团圆<small>中秋</small>',
+                'distance': '65'
             }
         ];
         for (var i = 0, len = dateDescArray.length; i < len; i++) {
