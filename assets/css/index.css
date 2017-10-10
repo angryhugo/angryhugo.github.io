@@ -71,6 +71,21 @@ html, body {
     font-size: 16px;
 }
 
+.iconfont {
+    font-size: 24px;
+    line-height: 32px;
+    position: absolute;
+    right: 2.5%;
+    z-index: 9;
+    display: block;
+    height: 32px;
+    width: 24px;
+}
+
+.icon-start {
+    display: none;
+}
+
 
 /*动画会引起lazyloading bug*/
 .swiper-slide:after {
