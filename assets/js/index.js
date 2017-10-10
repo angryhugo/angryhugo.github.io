@@ -96,6 +96,7 @@ $(function() {
         // Enable lazy loading
         // lazyLoading: true,
         autoplay : 3000,
+        autoplayDisableOnInteraction : false,
         loop: true
     });
     $swiperStart.on("click", function(){
