@@ -81,6 +81,16 @@ $(function() {
             'date': '2017-10-08',
             'desc': '时光不老，我们不散',
             'distance': '65'
+        },
+        {
+            'date': '2017-10-14',
+            'desc': '吃妈妈烧的鹅肉',
+            'distance': '65'
+        },
+        {
+            'date': '2017-10-15',
+            'desc': '不洗脸不洗头依然美',
+            'distance': '65'
         }
     ];
     for (var i = 0, len = dateDescArray.length; i < len; i++) {
