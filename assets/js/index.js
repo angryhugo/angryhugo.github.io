@@ -91,6 +91,16 @@ $(function() {
             'date': '2017-10-15',
             'desc': '不洗脸不洗头依然美',
             'distance': '65'
+        },
+        {
+            'date': '2017-10-21',
+            'desc': '被妈妈暗中凝视了',
+            'distance': '40'
+        },
+        {
+            'date': '2017-10-22',
+            'desc': '才貌双全的你',
+            'distance': '100'
         }
     ];
     for (var i = 0, len = dateDescArray.length; i < len; i++) {
