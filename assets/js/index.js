@@ -101,6 +101,21 @@ $(function() {
             'date': '2017-10-22',
             'desc': '才貌双全的你',
             'distance': '100'
+        },
+        {
+            'date': '2017-10-27',
+            'desc': '不开心的时候我都会陪你',
+            'distance': '35'
+        },
+        {
+            'date': '2017-10-28',
+            'desc': '坐公交、散步回家',
+            'distance': '0'
+        },
+        {
+            'date': '2017-10-29',
+            'desc': '睡觉怎么都这么可爱',
+            'distance': '32'
         }
     ];
     for (var i = 0, len = dateDescArray.length; i < len; i++) {
