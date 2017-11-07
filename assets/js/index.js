@@ -116,6 +116,16 @@ $(function() {
             'date': '2017-10-29',
             'desc': '睡觉怎么都这么可爱',
             'distance': '32'
+        },
+        {
+            'date': '2017-11-04',
+            'desc': '见了你的闺蜜',
+            'distance': '70'
+        },
+        {
+            'date': '2017-11-05',
+            'desc': '“欺负”诺诺',
+            'distance': '32'
         }
     ];
     for (var i = 0, len = dateDescArray.length; i < len; i++) {
