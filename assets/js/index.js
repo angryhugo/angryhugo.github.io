@@ -126,6 +126,11 @@ $(function() {
             'date': '2017-11-05',
             'desc': '“欺负”诺诺',
             'distance': '32'
+        },
+        {
+            'date': '2017-11-08',
+            'desc': '饭后特别想和你荡马路<small>金泽</small>',
+            'distance': '120'
         }
     ];
     for (var i = 0, len = dateDescArray.length; i < len; i++) {
