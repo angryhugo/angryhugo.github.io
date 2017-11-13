@@ -131,6 +131,16 @@ $(function() {
             'date': '2017-11-08',
             'desc': '饭后特别想和你荡马路<small>金泽</small>',
             'distance': '120'
+        },
+        {
+            'date': '2017-11-11',
+            'desc': '一起参加了婚礼',
+            'distance': '140'
+        },
+        {
+            'date': '2017-11-12',
+            'desc': '去金泽拿“弟弟”',
+            'distance': '90'
         }
     ];
     for (var i = 0, len = dateDescArray.length; i < len; i++) {
