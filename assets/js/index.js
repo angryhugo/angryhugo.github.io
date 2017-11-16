@@ -1,8 +1,8 @@
 $(function() {
     var dateTime = new Date().getTime();
-    var startDayTime = new Date("2017","7","28").getTime();
-    var days = parseInt((dateTime-startDayTime)/(24*60*60*1000));
-    $("#days").html(days+"days");
+    var startDayTime = new Date("2017", "7", "28").getTime();
+    var days = parseInt((dateTime - startDayTime) / (24 * 60 * 60 * 1000));
+    $("#days").html(days + "days");
     var qiniuBaseUrl = "http://owntjivne.bkt.clouddn.com/";
     var $swiperWrap = $(".swiper-wrapper");
     var $swiperStart = $(".icon-start");
@@ -141,30 +141,43 @@ $(function() {
             'date': '2017-11-12',
             'desc': '去金泽拿“弟弟”',
             'distance': '90'
+        },
+        {
+            'date': '2017-11-15',
+            'desc': '看了一部很美的电影',
+            'distance': '32'
+        },
+        {
+            'date': '2017-11-16',
+            'desc': '从青浦去上班',
+            'distance': '36'
         }
     ];
+    var totalDistance = 0;
     for (var i = 0, len = dateDescArray.length; i < len; i++) {
         var dateDesc = dateDescArray[i];
         var date = dateDesc.date;
         var desc = dateDesc.desc;
-        var distance = dateDesc.distance;
-        $swiperWrap.append('<div class="swiper-slide">' + '<p class="desc">' + desc + '</p><p class="date">' + date + '</p><p class="distance">' + distance + 'km</p><img src="' + qiniuBaseUrl + date + '.jpg?t='+ dateTime +'" width="95%" class="swiper-lazy"></div>')
+        var distance = parseInt(dateDesc.distance);
+        totalDistance += distance;
+        $swiperWrap.append('<div class="swiper-slide">' + '<p class="desc">' + desc + '</p><p class="date">' + date + '</p><p class="distance">' + distance + 'km</p><img src="' + qiniuBaseUrl + date + '.jpg?t=' + dateTime + '" width="95%" class="swiper-lazy"></div>')
     }
+    console.log("共" + dateDescArray.length + "次，" + totalDistance + "公里")
     var width = $(window).width();
     $(".swiper-container").css("height", width * 0.95 + 85);
     var swiper = new Swiper('.swiper-container', {
         // Enable lazy loading
         // lazyLoading: true,
-        autoplay : 3000,
-        autoplayDisableOnInteraction : false,
+        autoplay: 3000,
+        autoplayDisableOnInteraction: false,
         loop: true
     });
-    $swiperStart.on("click", function(){
+    $swiperStart.on("click", function() {
         swiper.startAutoplay();
         $swiperStart.hide();
         $swiperPause.show();
     });
-    $swiperPause.on("click", function(){
+    $swiperPause.on("click", function() {
         swiper.stopAutoplay();
         $swiperPause.hide();
         $swiperStart.show();
