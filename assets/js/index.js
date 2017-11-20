@@ -139,7 +139,7 @@ $(function() {
         },
         {
             'date': '2017-11-12',
-            'desc': '去金泽拿“弟弟”',
+            'desc': '去金泽拿地宝',
             'distance': '90'
         },
         {
@@ -151,6 +151,16 @@ $(function() {
             'date': '2017-11-16',
             'desc': '从青浦去上班',
             'distance': '36'
+        },
+        {
+            'date': '2017-11-18',
+            'desc': '终于满天星',
+            'distance': '45'
+        },
+        {
+            'date': '2017-11-19',
+            'desc': '黑灯瞎火见了丈母娘',
+            'distance': '32'
         }
     ];
     var totalDistance = 0;
