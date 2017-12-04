@@ -199,7 +199,7 @@ $(function() {
         }
     ];
     var totalDistance = 0;
-    for (var i = 0, len = dateDescArray.length; i < len; i++) {
+    for (var i = dateDescArray.length-1; i >=0; i--) {
         var dateDesc = dateDescArray[i];
         var date = dateDesc.date;
         var desc = dateDesc.desc;
