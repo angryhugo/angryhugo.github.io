@@ -181,6 +181,21 @@ $(function() {
             'date': '2017-11-27',
             'desc': '一起出门上班',
             'distance': '32'
+        },
+        {
+            'date': '2017-12-01',
+            'desc': '厨房与爱',
+            'distance': '44'
+        },
+        {
+            'date': '2017-12-02',
+            'desc': '半夜又吃了烧烤',
+            'distance': '10'
+        },
+        {
+            'date': '2017-12-03',
+            'desc': '在家吃火锅',
+            'distance': '0'
         }
     ];
     var totalDistance = 0;
