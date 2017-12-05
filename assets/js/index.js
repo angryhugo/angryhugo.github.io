@@ -227,4 +227,8 @@ $(function() {
         $swiperPause.hide();
         $swiperStart.show();
     });
+    $(window).on("touchstart", function(){
+        $("#my-audio")[0].play();
+        $(this).off("touchstart");
+    });
 });
