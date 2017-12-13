@@ -196,6 +196,21 @@ $(function() {
             'date': '2017-12-03',
             'desc': '在家吃火锅',
             'distance': '0'
+        },
+        {
+            'date': '2017-12-06',
+            'desc': '我们的纪念日<small>100days</small>',
+            'distance': '40'
+        },
+        {
+            'date': '2017-12-09',
+            'desc': '喝喜酒不带我',
+            'distance': '150'
+        },
+        {
+            'date': '2017-12-10',
+            'desc': '看电影睡着了',
+            'distance': '5'
         }
     ];
     var totalDistance = 0;
