@@ -211,6 +211,16 @@ $(function() {
             'date': '2017-12-10',
             'desc': '看电影睡着了',
             'distance': '5'
+        },
+        {
+            'date': '2017-12-16',
+            'desc': '蜜汁角度装扮圣诞树',
+            'distance': '32'
+        },
+        {
+            'date': '2017-12-17',
+            'desc': '看电影睡着了',
+            'distance': '70'
         }
     ];
     var totalDistance = 0;
