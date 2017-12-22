@@ -138,3 +138,7 @@ html, body {
         opacity: 0;
     }
 }
+
+[v-cloak] {
+    display: none;
+}
