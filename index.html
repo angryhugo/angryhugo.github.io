@@ -1,52 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>你是我最想留住的幸运</title>
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="./assets/img/favicon.png">
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/plugin/swiper/swiper.min.css">
-    <link rel="stylesheet" href="./assets/css/iconfont.css">
-    <link rel="stylesheet" href="./assets/css/index.css">
-</head>
-<body>
-    <div id="app">
-        <div class="pu">
-            我最亲爱的<small v-cloak>{{days}}</small>
-            <img src="./assets/img/favicon.png" alt="" width="36">
-        </div>
-        <!-- Swiper -->
-        <div class="swiper-container">
-            <span class="iconfont icon-start"></span>
-            <span class="iconfont icon-pause"></span>
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" v-for="dateDesc in dateArr" v-cloak>
-                    <p class="desc">{{dateDesc.desc}}<small v-if="dateDesc.tip">{{dateDesc.tip}}</small></p>
-                    <p class="date">{{dateDesc.date}}</p>
-                    <p class="distance">{{dateDesc.distance}}</p>
-                    <img :src="getImgUrl(dateDesc.date)" class="swiper-lazy" width="95%">
-                </div>
-            </div>
-        </div>
-    </div>
-    <audio id="my-audio" src="http://owntjivne.bkt.clouddn.com/little-luck.mp3" autoplay="autoplay"></audio>
-    <script src="https://unpkg.com/vue"></script>
-    <!-- Swiper JS -->
-    <script src="./assets/plugin/swiper/swiper.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script src="./assets/js/vue-index.js"></script>
-    <script>
-        var _hmt = _hmt || [];
-        (function() {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?a88d4222cf9376032b8cfe2d6af93863";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-
-</body>
-
-</html>
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" href=/static/img/favicon.ico type=image/x-icon><link rel=apple-touch-icon href=/static/img/favicon.png><title>你是我最想留住的幸运</title><link href=./static/css/app.fa28fc007098fe09948504e3dc07092a.css rel=stylesheet></head><body><div id=app></div><script>var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?a88d4222cf9376032b8cfe2d6af93863";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();</script><script type=text/javascript src=./static/js/manifest.b795ef3c5c617991ec2d.js></script><script type=text/javascript src=./static/js/vendor.8226f675e046df334018.js></script><script type=text/javascript src=./static/js/app.6a11331763e0a863b24f.js></script></body></html>
